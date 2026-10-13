@@ -1,22 +1,22 @@
 import requests
 
 SITES = [
-    # Pagini obișnuite (Părțile 2, 3 și 4)
+  
     "https://example.com",
     "https://httpbin.org/html",
     "https://httpbin.org/json",
     "https://httpbin.org/status/200",
     "https://httpbin.org/redirect/1",
     "https://httpbin.org/delay/2",
-    # Pagini care eșuează
+ 
     "https://httpbin.org/status/404",
     "https://httpbin.org/status/500",
     "https://httpbin.org/delay/10",
     "http://this-site-does-not-exist.invalid",
-    # Anteturi de securitate (Partea 5)
+   
     "https://httpbin.org/response-headers?X-Frame-Options=DENY&X-Content-Type-Options=nosniff",
     "https://httpbin.org/response-headers?x-frame-options=DENY",
-    # Răspunde aleatoriu cu 200 sau 500 (Partea 6)
+ 
     "https://httpbin.org/status/200,500",
 ]
 
